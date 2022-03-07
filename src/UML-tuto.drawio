@@ -1,14 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2022-03-07T13:33:16.152Z" agent="5.0 (Windows)" etag="3TpXHCgtPlt7Zun1ZAmH" version="16.5.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-07T13:46:29.682Z" agent="5.0 (Windows)" etag="aSZpYrPVgwzogRIStdl3" version="16.5.6" type="github">
   <diagram name="Page-1" id="9361dd3d-8414-5efd-6122-117bd74ce7a7">
     <mxGraphModel dx="2175" dy="1394" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1.5" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="AAFDWKz1jEGARac1eOJL-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.769;entryY=0.064;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="AAFDWKz1jEGARac1eOJL-104" target="AAFDWKz1jEGARac1eOJL-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="AAFDWKz1jEGARac1eOJL-104" value="Imprimer un RIB/IBAN" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-669" y="-460" width="120" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="AAFDWKz1jEGARac1eOJL-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AAFDWKz1jEGARac1eOJL-105" target="AAFDWKz1jEGARac1eOJL-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="AAFDWKz1jEGARac1eOJL-105" value="Consulter les mouvements du compte" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-669" y="-360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AAFDWKz1jEGARac1eOJL-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.231;entryY=0.109;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="AAFDWKz1jEGARac1eOJL-106" target="AAFDWKz1jEGARac1eOJL-135">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="AAFDWKz1jEGARac1eOJL-106" value="Effectuer un virement" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-669" y="-260" width="120" height="80" as="geometry" />
@@ -25,32 +34,11 @@
         <mxCell id="AAFDWKz1jEGARac1eOJL-109" value="&lt;div&gt;Client&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
           <mxGeometry x="-850" y="-390" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AAFDWKz1jEGARac1eOJL-116" value="S&#39;authentifier" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-430" y="-360" width="120" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="AAFDWKz1jEGARac1eOJL-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AAFDWKz1jEGARac1eOJL-123" target="AAFDWKz1jEGARac1eOJL-134">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="AAFDWKz1jEGARac1eOJL-123" value="&lt;div&gt;Non-inscrit&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
           <mxGeometry x="-850" y="20" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="AAFDWKz1jEGARac1eOJL-126" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="AAFDWKz1jEGARac1eOJL-106" target="AAFDWKz1jEGARac1eOJL-116">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-548.9981140329211" y="-209.99914218086985" as="sourcePoint" />
-            <mxPoint x="-368.67" y="-123.38999999999999" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="AAFDWKz1jEGARac1eOJL-129" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="AAFDWKz1jEGARac1eOJL-104" target="AAFDWKz1jEGARac1eOJL-116">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-590" y="-450" as="sourcePoint" />
-            <mxPoint x="-411" y="-340" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="AAFDWKz1jEGARac1eOJL-130" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="AAFDWKz1jEGARac1eOJL-105" target="AAFDWKz1jEGARac1eOJL-116">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-549" y="-310" as="sourcePoint" />
-            <mxPoint x="-429.9999999999941" y="-250" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="AAFDWKz1jEGARac1eOJL-134" value="Retirer de l&#39;argent" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-690" y="10" width="120" height="80" as="geometry" />

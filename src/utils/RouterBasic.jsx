@@ -15,6 +15,7 @@ import Effect from "../component/Effect";
 import { Counter } from "../component/Counter";
 import List from "../component/cart/List";
 import Home from "../component/cart/Home";
+import Cart from "../component/cart/Cart";
 
 const RouterBasic = () => {
   const [logged, setLogged] = useState(false);
@@ -28,6 +29,7 @@ const RouterBasic = () => {
           <Route path="/" element={<Header />}>
             <Route path="api" element={<List />} />
             <Route path="home" element={<Home/>} />
+            <Route path="cart" element={<Cart />} />
             
             <Route path=":wildcard" element={<WildCard />} />
 

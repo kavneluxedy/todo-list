@@ -1,3 +1,4 @@
+import { useState, createContext, useContext } from "react";
 import {
   Navbar,
   Container,
@@ -8,17 +9,25 @@ import {
 import Footer from "./Footer";
 import SearchForm from "../component/todo-list/SearchForm";
 import { useParams, useNavigate, Outlet, Link } from "react-router-dom";
+import CartMini from "../component/cart/CartMini";
+
+const CartContext = createContext();
+
+const useCartContext = () => {
+  return useContext(CartContext);
+}
 
 const Header = () => {
-  const navigate = useNavigate();
+  const [cart, setCart] = useState([]);
 
+  const navigate = useNavigate();
   const nav = (e, x) => {
     e.preventDefault();
     navigate(x);
   };
 
   return (
-    <>
+    <CartContext.Provider value={{ cart:cart, setCart:setCart }}>
       <Container>
         <Navbar bg="secondary" variant="danger">
           <Container>
@@ -32,12 +41,16 @@ const Header = () => {
               />{" "}
               React Bootstrap
             </Navbar.Brand>
+
+            <Link to="/cart">Link To Cart</Link>
+            <CartMini />
+
           </Container>
         </Navbar>
 
         <hr />
 
-        <ListGroup>
+        {/* <ListGroup>
           <article>
             <h3>Projects</h3>
           </article>
@@ -107,7 +120,7 @@ const Header = () => {
             </Button>
             <br />
           </p>
-        </ListGroup>
+        </ListGroup> */}
 
         {/* // ! OUTLET */}
         <Outlet />
@@ -119,8 +132,9 @@ const Header = () => {
       </Container>
 
       <Footer />
-    </>
+    </CartContext.Provider>
   );
 };
 
 export default Header;
+export { CartContext, useCartContext };

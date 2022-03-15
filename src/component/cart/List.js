@@ -3,6 +3,8 @@ import useFetch from "../../hooks/useFetch";
 import ProductRow from "./ProductRow";
 
 const List = () => {
+  const cart = [];
+
   const {
     data: products,
     loading,
@@ -12,7 +14,7 @@ const List = () => {
   return (
     <>
       {products && products.map((product, i) => {
-        return <ProductRow product={product} key={i} />;
+        return <ProductRow cart={cart} product={product} key={i} />;
       })}
     </>
   );

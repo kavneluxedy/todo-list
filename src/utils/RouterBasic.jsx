@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import WildCard from "./WildCard";
-import Header from "../../templates/Header";
-import Error404 from "../../templates/Error";
-import CardsTemplate from "../card-manager/CardsTemplate";
-import ToDoList from "../todo-list/ToDoList";
-import NeedAuth from "../user/NeedAuth";
-import Login from "../user/Login";
-import LogOut from "../user/LogOut";
-import Protected from "../user/Protected";
+import Header from "../templates/Header";
+import Error404 from "../templates/Error";
+import CardsTemplate from "../component/card-manager/CardsTemplate";
+import ToDoList from "../component/todo-list/ToDoList";
+import NeedAuth from "../component/user/NeedAuth";
+import Login from "../component/user/Login";
+import LogOut from "../component/user/LogOut";
+import Protected from "../component/user/Protected";
 // import Context from "../Context";
-import UseRef from "../Ref";
-import Effect from "../Effect";
-import { Counter } from "../Counter";
+import UseRef from "../component/Ref";
+import Effect from "../component/Effect";
+import { Counter } from "../component/Counter";
+import List from "../component/cart/List";
+import Home from "../component/cart/Home";
 
 const RouterBasic = () => {
   const [logged, setLogged] = useState(false);
@@ -24,6 +26,9 @@ const RouterBasic = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />}>
+            <Route path="api" element={<List />} />
+            <Route path="home" element={<Home/>} />
+            
             <Route path=":wildcard" element={<WildCard />} />
 
             <Route
